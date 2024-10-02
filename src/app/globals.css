@@ -1,27 +1,119 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* nav bar work tadaaa eww */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+}
+.header{
+  background-color: black;
+  color: pink;
+  display: flex; 
+  font-style: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.logo {
+  display: flex;
+  align-items: center; 
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.header-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+.header-button li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#navbar-hading{
+  font-size: 22px;
+  color:  rgb(113, 32, 130);
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* start home page work */
+
+
+.profile-info {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin-top: 20px; 
+  padding: 10px 20px; 
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column; 
+  margin-right: auto; 
+}
+
+.name {
+  margin: 0; 
+  font-size: 35px; 
+  font-style: Bold;
+  font-family:cursive;
+  color: rgb(113, 32, 130);
+}
+
+.title {
+  margin: 0; 
+  font-size: 20px;
+  color:pink;
+}
+
+.heading {
+  margin: 0; 
+  font-style: bold;
+  font-size: 35px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  rgb(113, 32, 130); 
+}
+
+
+ .profile-info img {
+  width: 500px; 
+  height: 300px; 
+ } 
+ .total {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+button{
+  background-color:pink; 
+  margin-left: 18px;
+  padding: 10px;
+  color:rgb(113, 32, 130);
+  font-style: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ } 
+
+ .total {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: flex-start; 
+  margin-left: 20px; 
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
